@@ -23,4 +23,9 @@ git remote add NOME CAMINHO -> vincula um repositório remoto ao repositório at
 git remote -v -> mostra os servidores remotos e os endereços
 git clone ENDERECO NOME -> ao pegar os arquivos pela primeira vez é necessário clonar, passando o endereço do servidor remoto e o nome da pasta a ser criada
 git remote rename -> altera nome do repositório remoto
-a
+
+git branch -> mostra os branchs
+git branch NOME -> cria um novo branch
+git checkout NOME -> passa a trabalhar com o branch selecionado
+visualizing-git -> site util para ver visualmente a forma de trabalho do git
+git checkout -b NOME -> cria um branch e já passa para ele
