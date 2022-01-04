@@ -1,0 +1,26 @@
+git config --local user.name "Seu nome"
+git config --local user.email "Seu email"
+Necessário essas duas configurações para começar a trabalhar com o git. O local altera para um projeto só, existe também a versão para
+todos os projetos:
+git config --global user.name "Seu nome"
+git config --global user.email "Seu email"
+
+git init -> inicia o repositório
+git status -> mostra quais arquivos foram alterados, o que precisa ser salvo, etc..
+git add -> adiciona o arquivo para ser comittado
+git add . -> adiciona todos os arquivos para serem comittados
+git commit -m "Mensagem" -> commita as modificações
+git log -> traz informações dos commits
+git log --oneline -> traz informações dos commits resumido
+git log -p -> traz informações dos commits e mostra as alterações
+
+.gitignore -> arquivo especial. Dentro dele deve conter os nomes dos arquivos a serem ignorados pelo git. Caso seja pra ignorar uma pasta inteira, colocar o nome pasta seguindo de barra. Ex: Ide/
+Depois de criar o .gitignore, temos que adicionar e commitar ele ao repositório.
+
+git init --bare -> cria um repositório servidor. Este repositório conterá as últimas versões dos arquivos.
+git remote -> mostrar todos os repositórios remotos que estão vinculados ao meu repositório local (para onde meu repositório local vai enviar as modificações)
+git remote add NOME CAMINHO -> vincula um repositório remoto ao repositório atual. O caminho pode ser uma pasta, pasta na rede, url...
+git remote -v -> mostra os servidores remotos e os endereços
+git clone ENDERECO NOME -> ao pegar os arquivos pela primeira vez é necessário clonar, passando o endereço do servidor remoto e o nome da pasta a ser criada
+git remote rename -> altera nome do repositório remoto
+a
