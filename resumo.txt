@@ -29,3 +29,7 @@ git branch NOME -> cria um novo branch
 git checkout NOME -> passa a trabalhar com o branch selecionado
 visualizing-git -> site util para ver visualmente a forma de trabalho do git
 git checkout -b NOME -> cria um branch e já passa para ele
+
+git merge NOMEBRANCH -> faz o merge do branch informado com o branch atual do checkout, criando um único commit com nome de merge. Esse commit encapsula os commits criados no branch que teve o merge realizado
+git rebase NOMEBRANCH -> difernete do merge, esse comando  leva todos os commits de um branch específico para o branch atual do checkout, sem encapsular 
+git log --graph -> mostra linhas de desenvolvimento
